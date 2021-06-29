@@ -1,0 +1,125 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+  }
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: teal;
+    
+    font-size: 30px;
+  }
+  .header h1{
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+  }
+  .navbar a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  /* .nav{
+    background: black;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .nav a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+
+.row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+  .side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+ .locationsDiv{
+    background-color:teal;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .locationsDiv li{
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  #EmptyDiv{
+    background-color:#f1f1f1;
+    padding: 5px;
+  }
+
+  .HoursDiv{
+    background-color:teal;
+    width: 100%;
+    padding: 20px;
+  }
+  .HoursDiv li{
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .ContactDiv{
+    background-color:teal;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ContactDiv a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: teal;
+    font-size: 18px;
+  }
+
+
+  /*======================== this part is for sales screen==================*/
+table{
+    border :solid 2px black;
+}
+
