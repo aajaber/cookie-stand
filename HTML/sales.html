@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales</title>
-    <link rel="stylesheet" href="../Style/reset.css">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -16,14 +16,45 @@
         </div>
         <nav class="navbar"> 
             <a href="index.html">Home</a>
-            <a href="sales.html">sales</a>
+            <a href="sales.html">Sales</a>
+    
         </nav>
     </header>
 
-    <main class="main">
+    <main >
+
+        <form id="BranchForm" class="FormMain">
+            <!-- forms Validation -->
+            <fieldset>
+                    <legend>Branch Information:</legend>
+                    <!---------------------------------------------- Location Name----->
+                            <label for="LocationField">Location: </label>
+                            <input type="text" id="LocationField" placeholder="Please Enter the City & the Country" size="40px">
+            </br>
+                    <!---------------------------------------------- minCustomers ----->
+                            <label for="minCustomers"> minCustomers: </label>
+                            <input type="number" id="minCustomers" placeholder="Minimum Customers Number" size="40px">                 
+            </br> 
+                    <!---------------------------------------------- maxCustomers----->
+                            <label for="maxCustomers">maxCustomers: </label>
+                            <input type="number" id="maxCustomers" placeholder="Max Customers Number" size="40px">                 
+            </br>   
+                    <!---------------------------------------------- Avg ----->
+                            <label for="Avg">Avarage: </label>
+                            <input type="number" id="Avg" placeholder="Enter the Avarage" step="0.01" size="40px">                 
+            </br>       
+               
+                    <input type="submit" value="submit">
+            
+          </fieldset>
+        </form>
         <h3>Sales list for today</h3>
-        <div id='salesList'>
+        <div id="sales" >
             <!-- List of sold cookies will be shown in this div -->
+        </div>
+
+        <div id="sales_list">
+
         </div>
     </main>
 

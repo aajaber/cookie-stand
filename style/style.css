@@ -122,4 +122,43 @@ body {
 table{
     border :solid 2px black;
 }
+tr{
+  border :solid 2px black;
+}
+td{
+  border :solid 2px black;
+}
+th{
+  border :solid 2px black;
+}
+/*===================== this part is for form page===========*/
 
+legend{
+  font-size: 35px;
+  text-align: center;
+  padding: 15px;
+}
+input {
+  
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: lightblue;
+}
+label{
+  padding: 15px;
+}
+
+.FormMain {
+  margin: 0 auto;
+  width: 500px;
+  clear: both;
+}
+
+.FormMain input {
+  
+  width: 100%;
+  clear: both;
+}

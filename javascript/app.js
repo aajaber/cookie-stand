@@ -73,8 +73,9 @@ for(let i =0; i <Branches.length ; i++)
 // Globle render function:
 
 
-let parent =document.getElementById('salesList');
+let parent =document.getElementById('sales_list');
 console.log(parent);
+
 
 let tabelElement=document.createElement('table');
 parent.appendChild(tabelElement);
@@ -105,6 +106,9 @@ function createHeader()
 createHeader();
 
 
+
+
+
 Branch.prototype.renderData=function()
 {
     let dataRow= document.createElement('tr');
@@ -125,12 +129,19 @@ Branch.prototype.renderData=function()
 }
 
 
+
 for(let i =0; i <Branches.length ; i++)
 {
     Branches[i].getCustomerNumber();
     Branches[i].getCoockies();
     Branches[i].renderData();
+    
 }
+
+
+
+
+
 
 
 function createFooter()
@@ -159,7 +170,43 @@ function createFooter()
     }
     let totalTD=document.createComment('td');
     footerRow.appendChild(totalTD);
-    finalTotal.textContent = finalTotal;
+    totalTD.textContent = finalTotal;
 }
-
 createFooter();
+
+
+/*==================================== Form Data  Lab 09 ======================*/
+
+const branchFrom = document.getElementById('BranchForm');
+branchFrom.addEventListener('submit', handleSubmit);
+
+            //====Submit Function:
+            function handleSubmit(event)
+            {
+                event.preventDefault();
+
+                const locationName =event.target.LocationField.value;
+                console.log(locationName);
+
+                const minCustomers = event.target.minCustomers.value;
+                console.log(minCustomers);
+
+                const maxCustomers = event.target.maxCustomers.value;
+                console.log(maxCustomers);
+
+                const avg = event.target.Avg.value;
+                console.log(avg);
+
+
+                let newBranch = new Branch(locationName,minCustomers,maxCustomers,avg);
+                console.log(newBranch);
+                newBranch.getCustomerNumber();
+                newBranch.getCoockies();
+                tabelElement.deleteRow(tabelElement.rows.length - 1);
+                newBranch.renderData();
+                createFooter();
+
+            }
+            
+console.log(Branches);
+/*======================================================================*/
